@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TakeScreenshotResults" parallel="false">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+      <listener class-name="com.qa.screenshot.captureScreenshot"></listener>
+ </listeners>
+
+<test name="Result1">
+
+<classes>
+<class name="com.qa.screenshot.captureScreenshot"></class>
+</classes>
+</test>
+
+</suite>
